@@ -1,0 +1,49 @@
+Start: Sat, 21 Feb 2015 8:11:00 -0800
+End: Sat, 21 Feb 2015 10:40:00  -0800
+Tasks: Created offline Log File and found css template for How-To-Guide
+
+Start: Sat, 21 Feb 2015 11:38:00 -0800
+End: Sat, 21 Feb 2015 13:21:00  -0800
+Tasks: Researched PDO information and thought out what to apply the PDO to that may be of interest to classmates
+
+Start: Sun, 22 Feb 2015 9:23:00 -0800
+End: Sun, 22 Feb 2015 12:04:00  -0800
+Tasks: Modified current php files for a video database so that they contained PDO vs MySQLi. More research on PDO
+
+Start: Sun, 22 Feb 2015 14:00:00 -0800
+End: Sun, 22 Feb 2015 16:12:00  -0800
+Tasks: Finished modification of php files with PDO. Linked up the php to the database via upload on Flip, made sure that it works 
+
+Start: Mon, 23 Feb 2015 9:50:00 -0800
+End: Mon, 23 Feb 2015 12:41:00  -0800
+Tasks: Started html pages for website. Outlined the format of the webpages and the topics to be covered
+
+Start: Mon, 23 Feb 2015 15:00:00 -0800
+End: Mon, 23 Feb 2015 17:00:00  -0800
+Tasks: Changed html templates to one that suited the website better. Worked on the information on the index.html.
+
+Start: Tues, 24 Feb 2015 11:10:00 -0800
+End: Tues, 24 Feb 2015 16:02:00  -0800
+Tasks: Made outline of the rest of the webpages based off the index.html. completed the index.html
+
+Start: Wed, 25 Feb 2015 8:48:00 -0800
+End: Wed, 25 Feb 2015 10:30:00  -0800
+Tasks: Worked on putting in inforamtion and screen clippings of code for connect.html, insert.html, and updateDelete.html.
+
+Start: Wed, 25 Feb 2015 13:47:00 -0800
+End: Wed, 25 Feb 2015 17:13:00  -0800
+Tasks: Finished up to the updateDelete.html and started in on the fetch.html and overview.html.
+
+Start: Wed, 25 Feb 2015 19:00:00 -0800
+End: Wed, 25 Feb 2015 21:00:00  -0800
+Tasks: Finished up to the fetch.html and overview.html.
+
+Start: Thurs, 26 Feb 2015 8:15:00 -0800
+End: Thurs, 26 Feb 2015 10:00:00  -0800
+Tasks: Final editing of the guide and added in two more additional sections to the index.html and the fetch.html
+
+Start: Thurs, 26 Feb 2015 10:00:00 -0800
+End: Thurs, 26 Feb 2015 11:45:00  -0800
+Tasks: Created GitHub repository, added OSU tester as collaborator, finished log file, and uploaded files to the site
+
+
