@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drea's How-To-Guide: PDO - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        PDO
+                    </a>
+                </li>
+                <li>
+                    <a href="connect.html">Connect</a>
+                </li>
+                <li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="updateDelete.html">Update and Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="overview">Overview</a>
+                </li>
+                        </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <hr>
+                        <h3>Connect with PDO</h3>
+                        <p>The first step is to connect to a MySQL database. Here we see the PHP class description of our database, <code> class videoDB {</code>, which includes
+                        your username, password, database name, and database host. Other components of the code make the class static, uncloneble, and deserializable.<hr></p>
+                        <img src="videoPDO_image1.png" alt="Connect PDO"/> 
+                        <hr>
+                        <p>A new instance of the class is created,<code> instance = new PDO {</code>,which takes in the driver, password, database, and username. You can see 
+                        that <code>$this</code> precludes the instance in this case, and it references the class code and acts like a local variable. In other tutorials, you may also see the use of 
+                        <code>$conn</code> as the chosen variable name, <code>$this</code> acts like <code>$conn</code> in this video database example. The try/catch block encloses the connect code, 
+                        which provides an error message to you in the case that they connect to the database.</p>
+                        <hr>
+                        <img src="videoPDO_image2.png" alt="PrivateConstructor PDO"/>
+                        <br>
+                        <h4>Connect with MySQLi</h4>
+                        <p>Here is the code using MySQLi, that accomplishes the same task of connecting to the database. Now we can see the difference of the PDO in contrast to MySQLi in the creation of the 
+                        private constructor .</p>
+                        <img src="videoSQL_image3.png" alt="PrivateConstructor SQL"/>
+                        <hr>
+                        <h4>PDO Error Modes</h4>
+                        <p>Note that in the PDO connection, the <code>PDO::ERRMODE_EXCEPTION</code>.  Exception error mode will send out exceptions as they occur, and has been modifed from the 
+                        default, <code>PDO::ERRMODE_SILENT</code>. Manual error fetching with quieries would need to be carried out with the silent mode option. Lastly, there is an <code>PDO::ERRMODE_WARNING</code>
+                        option with PDO, which sends out an error code and warning message.</p>
+                        <h5>PDO Error Mode Options:</h5>
+                        <ul style="list-style-type:square">
+ 							<li><code>PDO::ERRMODE_WARNING</code></li>
+ 							<li><code>PDO::ERRMODE_SILENT</code></li>
+ 							<li><code>PDO::ERRMODE_EXCEPTION</code></li>
+						</ul>
+						<hr>
+                        <p>Onward to the next section in which we will learn to insert with PDO...</p>
+                        <br>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a><a href="insert.html" class="btn btn-default" id="menu-toggle">Onward</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

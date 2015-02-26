@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drea's How-To-Guide: PDO - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        PDO
+                    </a>
+                </li>
+                <li>
+                    <a href="connect.html">Connect</a>
+                </li>
+                <li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="updateDelete.html">Update and Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+            </ul>
+           
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <hr> 
+                        <h3>Update with PDO</h3>
+                        <p>We need a way to update our video database, updating with PDO is straightforward. Using PDO format, we can create a function to update which contains an object 
+                        accessing the instance query. Below you will see the <code>toggle_checkout($id)</code> that uses an object to access the update of the query. 
+                        Note that the only syntactical difference between the PDO and MySQLi API's in this case is the <code>instance</code> placed between <code>$this</code> and <code>query</code>.</p>
+                        <hr>
+                        <img src="videoUpdatePDO_image7.png" alt="Update PDO"/> 
+                        <hr>
+                        <h3>Delete with PDO</h3>
+                        <p>The same can be said for the delete format in PDO versus MySQLi. And here we have our functions necessary to delete either one or all videos from the database.</p>                        
+                        <hr>
+                        <img src="videoDeletePDO_image8.png" alt="Delete PDO"/>
+                        <h3>Update in the Database</h3>
+                        <p>Lets take another look at the user view of the database to see the update from their point of view. The picture here shows an entry in the video database, and you 
+                        can see that Cats is Avaialable to checkout. </p>
+                        <img src="videoUpdatePDO_image19.png" alt="Update PDO Database"/> 
+                        <p>By selecting the button on the right for the checkin/out option, the video will be updated via our PDO update code we discussed above. Now, Cats is not avaialable in 
+                        inventory and the video has been correctly updated.</p>
+                        <img src="videoUpdatePDO_image20.png" alt="Update PDO Database"/> 
+                        <hr>
+                        <p>So far for our PDO example we have connected to the MySQL database, inserted with PDO into the database, and seen how to update and delete the database.
+                        Next we will take a look at fetching from the video database with PDO.</p>						
+						<hr>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a><a href="fetch.html" class="btn btn-default" id="menu-toggle">Onward</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

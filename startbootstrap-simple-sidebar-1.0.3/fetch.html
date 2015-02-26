@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drea's How-To-Guide: PDO - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        PDO
+                    </a>
+                </li>
+                <li>
+                    <a href="connect.html">Connect</a>
+                </li>
+                <li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="updateDelete.html">Update and Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+             </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <hr> 
+                        <h3>Fetch with PDO</h3>
+                        <p>We are now interested in fetching from our video database, or in other words getting data out of the database. In the three code clippings below, you can see the PDO format 
+                        used to do a series of different fetches on our database. The first one shows the code to get videos, which, of course, is the most broad fetch. Each code snippit following
+                        are a series of narrowed fetch queries: by category, with id, and get categories.</p>
+                        <img src="videoFetchPDO_image11.png" alt="Fetch PDO"/>
+                        <hr>
+                        <img src="videoFetchPDO_image12.png" alt="Fetch PDO"/>
+                        <hr>
+                        <img src="videoFetchPDO_image13.png" alt="Fetch PDO"/>
+                        <hr>
+                        <p>Below is a look at the PDO code written in the edit portion of our database program. </p> 
+                        <img src="videoFetchPDO_image23.png" alt="Fetch PDO Database"/> 
+                        <p>At the while loop portion of the code, notice that <code>PDO::FETCH_ASSOC</code> is the type of fetch that was chosen here. This means that an array is returned, indexed bu column name 
+                        for our video database fetch. There are other types of fetch that you can implement in PDO, Additional Resources section of the 'Overiew' page contains links that will provide more information 
+                        on these.</p>
+                        <h5>PDO Fetch Options:</h5>
+                        <ul style="list-style-type:square">
+ 							<li><code>PDO::FETCH_BOTH</code></li>
+ 							<li><code>PDO::FETCH_BOUND</code></li>
+ 							<li><code>PDO::FETCH_CLASS</code></li>
+ 							<li><code>PDO::FETCH_INTO</code></li>
+							<li><code>PDO::FETCH_LAZY</code></li>
+							<li><code>PDO::FETCH_NAMED</code></li>
+							<li><code>PDO::FETCH_NUM</code></li>
+							<li><code>PDO::FETCH_OBJ</code></li>
+						</ul>
+                        <hr>                      
+                        <h3>Fetch in the Database</h3>
+                        <p>Here is what the user sees when they go to pull information from the database.</p>
+                        <img src="videoFetchPDO_image17.png" alt="Fetch PDO Database"/>  
+                        <p>The drop down menu seen here implements the different fetch abilities on our video database. So in this case, the fetch is the filter on the items in our
+                        video inventory. Currently all videos are displayed to you. By selecting a category, action, we will implement the PDO fetch by category, <code>public function get_videos_by_category($category)</code> 
+                        and the image below will show the results from the query.</p>
+                        <img src="videoFetchPDO_image18.png" alt="Fetch PDO Database"/> 
+                        <hr>                                                                        
+                        <p>Now we will take a look at a PDO overview...</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a><a href="overview.html" class="btn btn-default" id="menu-toggle">Onward</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

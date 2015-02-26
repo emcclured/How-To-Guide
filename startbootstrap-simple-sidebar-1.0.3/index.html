@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drea's How-To-Guide: Video Database with PDO - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        PDO
+                    </a>
+                </li>
+                <li>
+                    <a href="connect.html">Connect</a>
+                </li>
+                <li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="updateDelete.html">Update and Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="overview">Overview</a>
+                </li>
+                        </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <br>
+                        <h3>What is this guide about?</h3>
+                        <p>In this how-to-guide, we will apply PDO to the creation of a video database. We will cover the basic implementations for PDO in this database example,
+                        compare it to MySQLi format where there are significant differences, and show the end result database.</p>
+                        <p>Brief information on PDO is provided in this guide, but the majority of the information will be left for other more indepth tutorials available online.  
+                        A few links is provided on the 'Overview' page at the end, which will give you more background information on PDO.  A link to the video database is also given.
+                        Here we will focus on applying PDO to a specific example--a video database. </p>
+                        <br>
+                        <h3>What is PDO?</h3>
+                        <p>PDO stands for PHP Data Object. PDO is a way for the PHP programming langugage to speak with the MySQL database.  More specifically, PDO is a type of 
+                        application programming interface (API) that is used to connect PHP programs to a MySQL database. Altogether, there are three API's available to connect  
+                        PHP to MySQL databases--the other two are MySQL and MySQLi.</p>
+                        <br> 
+                        <h3>Why use PDO?</h3>
+                        <p>There are three main benefits of PDO:it provides a robust API, it allows use of multiple different databases, and PDO offers prepared statement ability. Translation as to
+                        what this will do for you: flexible, elegant, and secure code.</p>
+                        <p>If you want to be able to use more than one database, PDO is the way to go.  The added level of security is also a plus.</p>
+                        <h4>PDO and MySQLi: A Few Differences</h4>
+                        <img src="videoConnectPDO_image24.png" alt="Index PDO Database"/> 
+                        <br>
+                        <hr>
+                        <p>Onward to the next section in which we will learn to connect with PDO...</p>
+                        <br>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a><a href="connect.html" class="btn btn-default" id="menu-toggle">Onward</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drea's How-To-Guide: PDO - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <script src="respond.min.js"></script>
+    <![endif]-->
+   </head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        PDO
+                    </a>
+                </li>
+                <li>
+                    <a href="connect.html">Connect</a>
+                </li>
+                <li>
+                    <a href="insert.html">Insert</a>
+                </li>
+                <li>
+                    <a href="updateDelete.html">Update and Delete</a>
+                </li>
+                <li>
+                    <a href="fetch.html">Fetch</a>
+                </li>
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+                           </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>How-To-Guide: Video Database with PDO</h1>
+                        <hr> 
+                        <h3>PDO Overview</h3>
+                        <p>In this How-To-Guide, we have looked at PDO in the creation of a video database. Connection, insertion, update, delete, and fetch were shown in each step. 
+                        Below is a link to the database that we implemented with the PDO covered in this guide.  You will be able to insert, update, delete and fetch on the database. Additional 
+                        resources are also listed to provide sources of supplemental information, as the primary focus in this guide was to focus on a specific PDO example.</p>
+                        <hr>
+                        <h3>Link to Video Database</h3>
+						<ul>
+							<li>
+								<a href="http://web.engr.oregonstate.edu/~mcclured/videoPDO/editVideoListPDO.php">Video Database with PDO</a>
+							</li>
+						</ul>
+                        <hr> 
+                        <h3>Additional PDO Resources</h3>
+                     	<ul>
+                			<li>
+                   		 		<a href="http://php.net/manual/en/book.pdo.php">PHP offical manual: PDO</a>
+                			</li>	
+                			<li>
+                    			<a href="https://www.youtube.com/watch?v=xuJ21kxwpMwhttps://www.youtube.com/watch?v=xuJ21kxwpMw">Getting Started with PHP PDO</a>
+                			</li>
+               				<li>
+                    			<a href="http://code.tutsplus.com/tutorials/why-you-should-be-using-phps-pdo-for-database-access--net-12059">Why use PDO?</a>
+                			</li>
+                			<li>
+                   	 			<a href="http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers">PDO Tutorial for Developers</a>
+                			</li>
+                			<li>
+                   				 <a href="http://www.virtualsecrets.com/pdo-encryption-mysql-from-php.html">PDO Encryption</a>
+               				 </li>
+                           </ul>                        
+                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
